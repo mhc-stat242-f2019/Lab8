@@ -1,0 +1,47 @@
+---
+title: "Lab08 - Anscombe's Quintet"
+output: pdf_document
+---
+
+## Anscombe's Quintet
+
+The following R code reads in a data set called `anscombe`.  It has five pairs of x variables and y variables: (x1, y1), (x2, y2), (x3, y3), (x4, y4), and (x5, y5). You will examine one of these pairs of variables, and then we will discuss them all as a class.  I'll tell you where the data came from later.
+
+```{r}
+library(readr)
+library(dplyr)
+options("pillar.sigfig" = 10) # print 10 significant digits in summarize output
+
+anscombe <- read_csv("http://www.evanlray.com/data/base_r/anscombe_quintet.csv")
+```
+
+### 1) Fit a linear model to one of the pairs, with the y variable as the response and the x variable as the explanatory variable.
+
+For example, if you are working with the third data set, your response variable will be `y3` and your explanatory variable will be `x3`.
+
+```{r}
+
+```
+
+### 2) Print out a summary of the linear model fit.
+
+```{r}
+
+```
+
+### 3) Report and interpret the regression coefficients.
+
+A complete interpretation would include what each variable represents in the real world and their units.  Since I haven't told you where these data came from yet, you don't know what the variables are or the units.  For this one problem, you can leave out these details of the context from your interpretation.
+
+```{r}
+
+```
+
+### 4) Report the residual standard deviation and use it to describe the magnitude of errors for predictions from this model.  What would you need to check in order for this interpretation to be correct?
+
+```{r}
+
+```
+
+### 5) Put your regression coefficients and the residual standard deviation on the board.
+
